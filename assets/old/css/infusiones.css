@@ -1,0 +1,153 @@
+.card.inactive{
+	background-color: #f8f8f8;
+	box-shadow: none !important;
+	border: none !important;
+}
+
+.card.clickeable:hover{
+	cursor: pointer;
+}
+
+.tag{
+	border-radius: 15px;
+	border-color: #adadad;
+	padding: 2px 10px;
+	border-style: solid;
+	border-width: 1px; 
+	color:#808080 !important;
+	font-weight: normal;
+	margin-left: 10px;
+	font-size: 12px;
+}
+
+.tag>span>i{
+	color: #b1b1b1;
+	font-size: 10px;
+}
+
+.lined:before,
+.lined:after {
+  background-color: #c9c9c98c;
+  content: "";
+  display: inline-block;
+  height: 1px;
+  position: relative;
+  vertical-align: middle;
+  width: 50%;
+}
+
+.lined:before {
+  right: 0.5em;
+}
+
+.lined:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.bottom-nav{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	box-shadow: 0px -3px 6px -2px rgba(0,0,0,0.3);
+	border-radius: 35px 35px 0px 0px;
+	height: 85px;
+	background-color: white;
+}
+
+.infusion-nav{
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 60px;
+	background-color: white;
+}
+
+.bottom-nav>.row>div{
+	align-content: center;
+}
+
+.help-btns{
+	padding-left: 40px;
+}
+
+.help-btns span{
+	display: table-cell;
+	padding-left: 8px;
+}
+
+.nav-btn{
+	margin:auto;
+	margin-top: 10px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	padding-top: 5px;
+}
+
+.nav-btn.selected{
+	background-color: #02d4fc;
+}
+
+.dotstyle ul {
+	position: relative;
+	display: inline-block;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	cursor: default;
+}
+
+.dotstyle li {
+	position: relative;
+	display: block;
+	float: left;
+	margin: 0 4px;
+	width: 8px;
+	height: 8px;
+	cursor: pointer;
+}
+
+.dotstyle li.current {
+	width: 10px;
+	height: 10px;
+	margin-top: -1px;
+}
+
+.dotstyle li.current a{
+	background-color: #616161;
+}
+
+.dotstyle li a {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	border-radius: 50%;
+	background-color: #fff;
+	background-color: rgba(129, 129, 129, 0.75);
+	text-indent: -999em;
+	cursor: pointer; /* make the text accessible to screen readers */
+	position: absolute;
+}
+
+.btn-outline{
+	border: solid 2px rgba(0,0,0,0.5);
+}
+
+.btn .btn-block{
+	width: 100%;
+}
+
+.dashboard-service-cards{
+	overflow-x: auto;
+	width: 100%;
+	flex-wrap: nowrap;
+	-ms-overflow-style: none;  /* IE and Edge */
+	scrollbar-width: none;  /* Firefox */
+}
+
+.dashboard-service-cards::-webkit-scrollbar {
+  display: none;
+}

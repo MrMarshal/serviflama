@@ -1,0 +1,51 @@
+.text-white{
+	color:white !important;
+}
+
+.thead-bg{
+	background-color: #022199;
+}
+
+.thead-bg>tr>th{
+	color: white !important;
+	font-size: 12px !important;
+	text-transform: none !important;
+}
+
+
+
+
+@media screen {
+  #printSection {
+      display: none;
+  }
+}
+
+@media print {
+  body * {
+    visibility:hidden;
+    -webkit-print-color-adjust: exact;
+  }
+  .thead-bg{
+    background-color: #848484 !important;
+    color: black !important;
+  }
+  .text-white{
+    color: black !important;
+  }
+  .collapse{
+    display: table-row-group !important;
+  }
+  .not-print{
+    display: none;
+  }
+  #printSection, #printSection * {
+    visibility:visible;
+  }
+  #printSection {
+    position:absolute;
+    left:0;
+    top:0;
+  }
+}
+
