@@ -47,13 +47,14 @@
 			$s = $this->query->select("*",self::TABLE_USERS,"password = '".md5($data->get("password"))."' AND email = '".$data->get("email")."'");
 			if(session_status() == PHP_SESSION_NONE)
 				session_start();
+			$user = $this->GetFirst($s);
 			$_SESSION['login'] = 1;
 			$_SESSION['start'] = time();
 			$user['single_name'] = explode(" ",$user['name'])[0];
 			$user['pass'] = "Qué miras, puto";
 			$user['password'] = $user['pass'];
 			$_SESSION['user'] = $user;
-			return $this->GetFirst($s);
+			return $user;
 		}
 	}
 ?>
