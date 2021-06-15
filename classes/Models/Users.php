@@ -49,9 +49,6 @@
 				session_start();
 			$_SESSION['login'] = 1;
 			$_SESSION['start'] = time();
-			if (!isset($user["business_id"])){
-				$_SESSION['expire'] = $_SESSION['start'] + (1440 * 60);
-			}
 			$user['single_name'] = explode(" ",$user['name'])[0];
 			$user['pass'] = "Qué miras, puto";
 			$user['password'] = $user['pass'];
