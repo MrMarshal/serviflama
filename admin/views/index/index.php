@@ -6,7 +6,7 @@
 		<a href="clients.php" class="btn btn-success btn-rounded btn-outline btn-success">Ver clientes</a>
 	</div>
 	<div class="row" style="margin-top: 30px;">
-		<a href="comspumtions.php" class="btn btn-success btn-rounded btn-outline btn-success">Ver consumos</a>
+		<a href="consumos.php" class="btn btn-success btn-rounded btn-outline btn-success">Ver consumos</a>
 	</div>
 	<!--<div class="row" style="margin-top: 30px;">
 		<a href="users.php" class="btn btn-success btn-rounded btn-outline btn-success">Ver usuarios</a>
